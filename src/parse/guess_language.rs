@@ -45,6 +45,7 @@ pub(crate) enum Language {
     Java,
     JavaScript,
     JavascriptJsx,
+    Jq,
     Json,
     Julia,
     Kotlin,
@@ -137,6 +138,7 @@ pub(crate) fn language_name(language: Language) -> &'static str {
         JavaScript => "JavaScript",
         JavascriptJsx => "JavaScript JSX",
         Json => "JSON",
+        Jq => "jq",
         Julia => "Julia",
         Kotlin => "Kotlin",
         LaTeX => "LaTeX",
@@ -269,6 +271,7 @@ pub(crate) fn language_globs(language: Language) -> Vec<glob::Pattern> {
         Janet => &["*.janet", "*.jdn"],
         Java => &["*.java"],
         JavaScript => &["*.cjs", "*.js", "*.mjs", "*.snap"],
+        Jq => &["*.jq"],
         Json => &[
             "*.json",
             "*.avsc",

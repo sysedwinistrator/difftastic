@@ -199,6 +199,11 @@ fn main() {
             extra_files: vec!["scanner.c"],
         },
         TreeSitterParser {
+            name: "tree-sitter-jq",
+            src_dir: "vendored_parsers/tree-sitter-jq-src",
+            extra_files: vec![],
+        },
+        TreeSitterParser {
             name: "tree-sitter-json",
             src_dir: "vendored_parsers/tree-sitter-json-src",
             extra_files: vec![],
